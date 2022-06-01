@@ -1,13 +1,12 @@
 'use strict';
 
 const mysql = require('mysql2'),
-  conf = require('./db-conf.json'),
+  conf = require('./db-conf.js'),
   dbOptions = {
-    host: conf.mysql.host,
-    port: conf.mysql.port,
-    user: conf.mysql.user,
-    password: conf.mysql.pass,
-    database: conf.mysql.db,
+    host: conf.host,
+    user: conf.user,
+    password: conf.pass,
+    database: conf.db,
   },
   myConn = mysql.createConnection(dbOptions);
 

@@ -1,5 +1,5 @@
 'use strict';
-
+require('dotenv').config();
 const express = require('express'),
   favicon = require('serve-favicon'),
   bodyParser = require('body-parser'),
